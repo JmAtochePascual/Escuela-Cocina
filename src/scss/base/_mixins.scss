@@ -1,0 +1,30 @@
+@use 'variables' as v;
+
+
+@mixin boton($bgColor, $colorTexto) {
+    width: 100%;
+    padding: .8rem 3.2rem;
+    font-size: 1.6rem;
+    display: inline-block;
+    font-weight: 700;
+    border: none;
+    text-align: center;
+    color: $colorTexto;
+    background-color: $bgColor;
+    transition-property: background-color;
+    transition-duration: .3s;
+
+    @media (min-width: 768px) {
+        width: auto;
+
+        &:hover {
+            background-color: darken($bgColor, 10%);
+        }
+    }
+}
+
+@mixin grid($columnas, $espaciado ) {
+    display: grid;
+    gap: $espaciado;
+    grid-template-columns: repeat($columnas, 1fr);
+}
