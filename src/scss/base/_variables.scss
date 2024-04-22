@@ -1,42 +1,35 @@
-// @font-face {
-//   font-family: "Roboto";
-//   font-style: normal;
-//   font-weight: 400;
-//   src: url("../../src/fonts/") format("truetype");
-// }
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../src/fonts/Roboto-Regular.ttf") format("truetype");
+}
 
-// @font-face {
-//   font-family: "Roboto";
-//   font-style: normal;
-//   font-weight: 600;
-//   src: url("../../src/fonts/") format("truetype");
-// }
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../../src/fonts/Roboto-Medium.ttf") format("truetype");
+}
 
-// @font-face {
-//   font-family: "Roboto";
-//   font-style: normal;
-//   font-weight: 700;
-//   src: url("../../src/fonts/") format("truetype");
-// }
-
-// @font-face {
-//   font-family: "Roboto";
-//   font-style: normal;
-//   font-weight: 900;
-//   src: url("../../src/fonts/") format("truetype");
-// }
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../../src/fonts/Roboto-Bold.ttf") format("truetype");
+}
 
 // Fuentes
-$fuente_principal: '', sans-serif;
+$fuente_principal: 'Roboto', sans-serif;
 $paragraph: 400 1.4rem/1.5 $fuente_principal;
 $paragraph-tablet: 400 1.6rem/1.5 $fuente_principal;
-$title1: 900 4rem/1.2 $fuente_principal;
-$title2: 900 3.6rem/1.2 $fuente_principal;
-$title3: 900 3.2rem/1.2 $fuente_principal;
+$title1: 700 3.2rem/1.2 $fuente_principal;
+$title2: 700 2.4rem/1.2 $fuente_principal;
+$title3: 700 2rem/1.2 $fuente_principal;
 
 // Colores
-$primario: #e8505b;
-$secundario: #455a64;
+$primario: #f46669;
+$secundario: #c7c57d;
 $negro: #000;
 $blanco: #FFFFFF;
-$grisClaro: #eceeef;
+$gris: #f5f5f5;
