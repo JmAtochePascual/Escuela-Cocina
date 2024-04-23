@@ -24,13 +24,12 @@
 }
 
 
-@mixin suppor_bg($url) {
-
-    $url_jpg: "#{$url}.jpg";
+@mixin support_bg($url, $use_png: false) {
+    $url_image: if($use_png, "#{$url}.png", "#{$url}.jpg");
     $url_webp: "#{$url}.webp";
     $url_avif: "#{$url}.avif";
 
-    background-image: url($url_jpg);
+    background-image: url($url_image);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -41,5 +40,26 @@
 
     @supports (background-image: url($url_avif)) {
         background-image: url($url_avif);
+    }
+}
+
+@mixin titulo {
+    text-align: center;
+    margin-bottom: 2.4rem;
+
+    @media (min-width: 768px) {
+        margin-bottom: 4.8rem;
+    }
+
+    &::after {
+        @include support_bg("../img/separador", "true");
+        position: relative;
+        z-index: 3;
+        content: "";
+        width: 6rem;
+        height: 4rem;
+        margin-inline: auto;
+        margin-top: .8rem;
+        display: block;
     }
 }
