@@ -23,8 +23,23 @@
     }
 }
 
-@mixin grid($columnas, $espaciado ) {
-    display: grid;
-    gap: $espaciado;
-    grid-template-columns: repeat($columnas, 1fr);
+
+@mixin suppor_bg($url) {
+
+    $url_jpg: "#{$url}.jpg";
+    $url_webp: "#{$url}.webp";
+    $url_avif: "#{$url}.avif";
+
+    background-image: url($url_jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @supports (background-image: url($url_webp)) {
+        background-image: url($url_webp);
+    }
+
+    @supports (background-image: url($url_avif)) {
+        background-image: url($url_avif);
+    }
 }
