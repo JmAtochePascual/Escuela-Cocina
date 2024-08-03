@@ -74,6 +74,6 @@ Este proyecto está bajo la licencia [MIT](https://opensource.org/licenses/MIT).
 
 ## 🌐Ver Proyecto en la WEB
 
-Puedes ver el proyecto en funcionamiento [aquí](https://jmatochepacual.github.io/Escuela-Cocina).
+Puedes ver el proyecto en funcionamiento [aquí](https://jmatochepascual.github.io/Escuela-Cocina/).
 
 Todos los derechos reservados Escuela Cocina 2024 ©.
